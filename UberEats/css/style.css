@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  padding: 18px 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "•";
+}
+
+.card:hover {
+  background-color: RGBA(117, 117, 117, .1);
+  transition: .4s;
+}
+
+.card-img {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.card-img img {
+  transition: 2s;
+  display: block;
+}
+
+.card-img img:hover {
+  transform: scale(1.2);
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: green;
+  transition: .4s;
+}
+
+.fa-facebook-square:hover {
+  color: blue;
+}
+
+.fa-twitter:hover {
+  color: lightblue;
+}
+
+.fa-instagram:hover {
+  color: purple;
+}
+
+.mobile-app:hover {
+  box-shadow: 0 5px 10px white;
+  transition: .4s;
+}
+
+/* Rest */
+
+.menu-nav a {
+  color: gray;
+  font-size: large;
+}
+
+.menu-nav a:hover {
+  color: green;
+}
+
+
+@media (max-width: 576px) {
+  .card {
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+
+  .menu-section {
+    text-align: center;
+  }
+}
